@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --green:#37A69C;
+    --background:#EFF5F4;
+    --input:#F2F8F8;
+    --gray:#D7CABD;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(226, 227, 227);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    max-width: 90%;
+    height: 600px;
+    border-radius: 15px;
+}
+
+/* LEFT SIDE START */
+
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37A69C;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    transition: 1s all;
+}
+
+
+.left-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    justify-content: space-around;
+    height: 300px;
+    transition: 1s all;
+
+
+}
+
+.left-contain a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius:15px ;
+    transition: 0.5s ease-in-out;
+}
+
+/* LEFT SIDE END */
+
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-grow: 1;
+    background-color: white;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    transition: 1s all;
+}
+
+.right-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.right-contain form{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form input{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: #efeeed;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"]{
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: #37A69C;
+    border: 1px solid transparent;
+    color: white;
+    padding-left: 10px;
+    transition: 0.5s all;
+}
+
+
+/*  GENEL */
+
+.horizantal{
+    display: none;
+}
+
+.right-side a{
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    justify-content: center;
+}
+
+.links{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+    width: 25px;
+    
+}
+
+.icon1{
+    width: 15px;
+}
+
+.icon-login{
+    margin-top: -60px;
+    margin-left: 10px;
+    position: absolute;
+    align-self: flex-start;
+    width: 12px;
+}
+
+
+/* HOVERS */
+
+
+.icon:hover{
+    width: 30px;
+    fill: var(--green);
+}
+
+
+.icon1:hover{
+    width: 18px;
+    fill: var(--green);
+}
+
+input[type="submit"]:hover{
+    background-color: #258c84;
+}
+
+.left-contain a:hover{
+    background-color: #258c84;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .left-side{
+        min-width: 50px;
+    }
+
+    .left-contain{
+        display: none;
+    }
+
+    .horizantal{
+        position: absolute;
+        display: flex;
+        color: royalblue;
+        transform: rotate(270deg);
+        text-align: center;
+        width: 100px;
+        color: #efeeed;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1px solid rgba(230, 230, 230, 0.441);
+        border-radius: 15px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        width: 80%;
+    }
+
+    .right-side{
+        flex-shrink: 0;
+        width: 90%;
+        transition: 1s all;
+    }
+
+    .right-contain h1{
+        font-size: 25px;
+    }
+
+    .right-contain p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .links{
+        width: 200px;
+    }
+  }
