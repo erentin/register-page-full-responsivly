@@ -4,7 +4,7 @@
  LAPTOP SCREEN
 ![127 - Full - Generic Laptop - 07 07 2022 at ÖS 9 30 08](https://user-images.githubusercontent.com/94992378/177844212-3488c434-eae4-4cdc-94ed-4432cf13b9c1.jpg)
 
-IPAD
+<h1> IPAD </h1>
 ![127 - Full - iPad - 07 07 2022 at ÖS 9 30 08](https://user-images.githubusercontent.com/94992378/177844218-18ed566c-d5b2-4adb-a285-ea58bc7f0222.jpg)
 
 IPHONE X
